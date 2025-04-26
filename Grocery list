@@ -1,0 +1,51 @@
+grocery_list = []
+def add_item():
+    item = input("Enter the item you want to add: ")
+    grocery_list.append(item)
+    print(f"{item} has been added to your grocery list.")
+def remove_item():
+    item = input("Enter the item you want to remove: ")
+    grocery_list.remove(item)
+    print(f"{item} has been removed from your grocery list.")
+def view_list():
+    if len(grocery_list) == 0:
+        print("Your grocery list is empty.")
+    else:
+        print("Your grocery list:")
+        for item in grocery_list:
+            print(f"- {item}")
+
+
+
+
+
+
+
+
+
+
+def show_menu():
+  print("\nMenu:")
+  print("1. Add item")
+  print("2. Remove item")
+  print("3. View list")
+  print("4. Exit")
+
+def main():
+    while True:
+        show_menu()
+        choice = int(input("Enter your choice (1-4): "))
+        if choice == 1:
+            add_item()
+        elif choice == 2:
+            remove_item()
+        elif choice == 3:
+            view_list()
+        elif choice == 4:
+            print("Goodbye, please come again!")
+            break
+        else:
+            print("Invalid choice. Please enter a valid option.")
+
+
+main()
