@@ -1,0 +1,33 @@
+def getMarks():
+    marks1=int(input("Enter the marks of subject 1: "))
+    marks2=int(input("Enter the marks of subject 2: "))
+    marks3=int(input("Enter the marks of subject 3: "))
+    return marks1,marks2,marks3
+def calculate_total(m1,m2,m3):
+    return m1+m2+m3
+def calculate_average(total):
+    return total/3
+def student_report():
+    print("===Student Grade Calculator===")
+    m1,m2,m3=getMarks()
+    total=calculate_total(m1,m2,m3)
+    avg=calculate_average(total)
+    grade=determine_grade(avg)
+    display_result(total,avg,grade)
+student_report()
+def determine_grade(avg):
+    if avg >= 90:
+        return "A+"
+    elif avg >= 80:
+        return "A"
+    elif avg >= 70:
+        return "B"
+    elif avg >= 60:
+        return "C"
+    else:
+        return "F"
+def display_result(total, avg,grade):
+    print("Total Marks: ", total)
+    print("Average Marks: ", avg)
+    print("Grade: ", grade)
+
