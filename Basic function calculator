@@ -1,0 +1,17 @@
+# Calculator
+# print("Welcome to the calculator Game")
+# print("This game will give you a total value of you inputs")
+# num1=int(input("Enter first number"))
+# num2=int(input("Enter second number"))
+# print("Enter in the operator example: +, -, *, /")
+# operator = input("Enter the operator")
+# if operator == "+":
+#     print("The result is", num1 + num2,)
+# elif operator == "-":
+#     print("The result is", num1 - num2)
+# elif operator =="*":
+#     print("The result is", num1 * num2)
+# elif operator == "/":
+#     print("The result is", num1 / num2)
+# else:
+#     print("Invalid operator")
